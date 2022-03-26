@@ -1,5 +1,6 @@
+package com.creations.space.strings.ReverseString;
+
 import java.io.*;
-import java.util.*;
 
 public class ReverseString {
 
