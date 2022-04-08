@@ -24,6 +24,15 @@ public interface Input {
     }
   }
 
+  default int inputInt() {
+    try {
+      return Integer.parseInt(br.readLine().trim());
+    } catch (IOException e) {
+      e.printStackTrace();
+      return -1;
+    }
+  }
+
   default int[] inputIntArray() {
     String[] strings = new String[0];
     try {

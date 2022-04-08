@@ -4,18 +4,17 @@ import com.creations.space.utils.*;
 
 public class MissingNumber implements Input, Output {
 
-/**
- * Given an array of integers where each number is
- * repeated twice except for one number which
- * occurs only once. Find the odd one out.
- */
-public int missingNumber(int[] numbers) {
-  int xor = 0;
-  for (int i : numbers) {
-    xor ^= i;
+  /**
+   * Given an array of integers where each number is repeated twice except for one number which
+   * occurs only once. Find the odd one out.
+   */
+  public int missingNumber(int[] numbers) {
+    int xor = 0;
+    for (int i : numbers) {
+      xor ^= i;
+    }
+    return xor;
   }
-  return xor;
-}
 
   private void driver() {
     int[] nums = inputIntArray();
